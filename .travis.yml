@@ -2,7 +2,7 @@ language: php
 php:
 - 7.2
 before_script:
-- composer install
+# - composer install
 script: echo 'none'
 deploy:
   provider: heroku
