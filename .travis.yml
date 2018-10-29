@@ -1,0 +1,14 @@
+language: php
+php:
+- 7.2
+before_script:
+- composer install
+script: echo 'none'
+deploy:
+  provider: heroku
+  app: curso-cefire-github
+  on: master
+  skip_cleanup: true
+  api_key:
+    secure: Mefiwn+6Y3Js/IStk1BXjQQXXW6aAsqh/nc0CuywkZPAeJFzOxjnRbO0GUUqbX/5qfJzTfjwgCbNpu3CQYigah6Aj0HnRBvFfvN/q+yhhKG4pi46iWVZ4tpW1+gmPQCcTy+d5wIWfwJXO5stjlN0AcesVSGmjaolduwxvZ8LKMZWz72WZYR9EKLuoIQVHN27d2fJM/lK5MbVu++Z7UDCnE2YByBClk8Nie3SVubib+R1IidHRu8Lyq/2ijfCp+ljJyyn7VWfHGc2WIvxLimfzicF+A9ZAV4bPhwlBZRtPaH4xYOVatJdbcipPmQym9VqeygOkCl/JXPw+wp8mFLBSHeK9y/fHNmhUSWXByYXgx4EZ2eY/s1XaPqHMCE9I8oe3RpsWOjBUtm26SK7uwBU8+D3zucz9xzN6gDd2X4PE+5x4COYKJsFaDYH6bofOs31AE0JijqY5bzjDwLP4TGZFrJHzVa5aEhPLm9MlEF1muaOQsw8aE9kHo+cZ1EuFp5N1vQPzMktRAEx0fg1Zgkf6ecJazUl/gdUCSl2pKSlC6vSSuqeQ7Fm+6uSbS0XRFmFIx0XKGfLvJwFu6duVCjGCQxxPGsA4x70gEmy3TQtv+xu42CmZXqxKsGp9V/R4iblvyQrAsMZekUugKjtf0tevmJ7P6N7tMOMhDkzSxZOHB8=
+
